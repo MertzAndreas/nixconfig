@@ -14,9 +14,8 @@
       url = "github:AvengeMedia/DankMaterialShell/stable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    vicinae.url = "github:vicinaehq/vicinae";
   };
-  outputs = { self, nixpkgs, home-manager, niri, dms, vicinae, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, niri, dms, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
@@ -32,7 +31,6 @@
             niri.homeModules.niri
             dms.homeModules.dank-material-shell
             dms.homeModules.niri
-            vicinae.homeManagerModules.default
           ];
         }
       ];

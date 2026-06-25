@@ -60,7 +60,6 @@
         { argv = [ "spotify" ]; }
         { argv = [ "discord" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland" ]; }
         { argv = [ "nm-applet" ]; }
-        { argv = [ "vicinae" "server" ]; }
       ];
 
       "prefer-no-csd" = true;
@@ -127,7 +126,7 @@
           action.spawn = [ "sh" "-c" "kitty-cwd" ];
           "hotkey-overlay".title = "Open a Terminal: kitty";
         };
-        "Mod+Space".action.spawn = [ "vicinae" "toggle" ];
+        "Mod+Space".action.spawn = [ "dms" "ipc" "call" "spotlight" "toggle" ];
         "Mod+B" = {
           action.spawn = [ "sh" "-c" "firefox" ];
           "hotkey-overlay".title = "Open Browser: Firefox";
