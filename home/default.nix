@@ -1,0 +1,13 @@
+{ pkgs, ... }: {
+  imports = [
+    ./programs/niri.nix
+    ./programs/kitty.nix
+    ./programs/git.nix
+    ./programs/shell.nix
+    ./programs/neovim.nix
+    ./programs/dms.nix
+    ./scripts/default.nix
+  ];
+
+  home.stateVersion = "26.05";
+}
