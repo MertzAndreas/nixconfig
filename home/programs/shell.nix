@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   home.packages = [
+    pkgs.bat
     pkgs.btop
     pkgs.discord
     pkgs.docker-client
@@ -8,6 +9,7 @@
     pkgs.fastfetch
     pkgs.ffmpeg
     pkgs.firefox
+    pkgs.jq
     pkgs.kitty
     pkgs.mpv
     pkgs.nautilus
@@ -16,6 +18,7 @@
     pkgs.pavucontrol
     pkgs.sioyek
     pkgs.spotify
+    pkgs.tealdeer
     pkgs.unrar
     pkgs.unzip
     pkgs.wl-clipboard

@@ -113,11 +113,6 @@
         "Mod+O".action."toggle-overview" = [];
         "Mod+Q".action."close-window" = [];
         "Mod+Tab".action."focus-workspace-previous" = [];
-        "Mod+Alt+Space" = {
-          action.spawn = [ "sh" "-c" "main-menu" ];
-          "hotkey-overlay".title = "Main Menu";
-        };
-
         "Mod+P".action.screenshot = {};
         "Mod+Shift+P".action."screenshot-screen" = {};
         "Mod+Alt+P".action."screenshot-window" = {};
