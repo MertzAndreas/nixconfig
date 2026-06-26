@@ -6,6 +6,7 @@
     ./programs/shell.nix
     ./programs/neovim.nix
     ./programs/dms.nix
+    ./programs/matugen
     ./scripts/default.nix
   ];
 

@@ -1,0 +1,9 @@
+[config]
+
+[templates.niri-fire-shader]
+input_path = 'HOME_DIR/.config/matugen/templates/niri-fire-shader.kdl.template'
+output_path = 'HOME_DIR/.config/niri/fire-shader.kdl'
+
+[templates.nvim-dankcolors]
+input_path = 'HOME_DIR/.config/matugen/templates/colors.lua.template'
+output_path = 'HOME_DIR/.config/nvim/lua/plugins/colors.lua'
