@@ -2,7 +2,7 @@
   home.packages = with pkgs; [
     rust-analyzer
     lua-language-server
-    nil
+    nixd
     roslyn-ls
     vtsls
     tailwindcss-language-server
