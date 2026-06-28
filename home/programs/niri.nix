@@ -3,6 +3,11 @@
     enable = true;
     package = pkgs.niri-unstable;
     settings = {
+
+      cursor = {
+        size = 28;
+      };
+
       input = {
         keyboard = {
           xkb = {
@@ -22,6 +27,7 @@
         mouse."accel-speed" = -0.75;
         "warp-mouse-to-focus".enable = true;
         "focus-follows-mouse"."max-scroll-amount" = "0%";
+
       };
 
       clipboard."disable-primary" = true;
@@ -35,7 +41,7 @@
             height = 1600;
             refresh = 120.0;
           };
-          scale = 1.5;
+          scale = 1.2;
           position = {
             x = 0;
             y = 0;
@@ -72,13 +78,7 @@
 
       "spawn-at-startup" = [
         { argv = [ "spotify" ]; }
-        {
-          argv = [
-            "discord"
-            "--enable-features=UseOzonePlatform"
-            "--ozone-platform=wayland"
-          ];
-        }
+        { argv = [ "vesktop" ]; }
         { argv = [ "nm-applet" ]; }
       ];
 
@@ -167,12 +167,8 @@
           "hotkey-overlay".title = "Open Browser: Firefox";
         };
         "Mod+D" = {
-          action.spawn = [
-            "sh"
-            "-c"
-            "run-or-raise wayland-discord"
-          ];
-          "hotkey-overlay".title = "Open Discord";
+          action.spawn = [ "vesktop" ];
+          "hotkey-overlay".title = "Open Vesktop";
         };
         "Mod+M" = {
           action.spawn = [
