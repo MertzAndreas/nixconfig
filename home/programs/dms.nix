@@ -15,6 +15,8 @@
             leftWidgets = [ "clock" ];
             centerWidgets = [ "workspaceSwitcher" ];
             rightWidgets = [ "systemTray" "clipboard" "notificationButton" "battery" "controlCenterButton" ];
+            transparency = 5;
+            widgetTransparency = 50;
         }];
     };
 

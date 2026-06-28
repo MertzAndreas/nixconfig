@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.kitty = {
     enable = true;
-    font.name = "CaskaydiaMono Nerd Font";
+    font.name = "FiraCode Nerd Font";
     settings = {
       window_padding_width = 10;
       allow_remote_control = "yes";
@@ -9,6 +9,7 @@
       background_blur = 1;
       background_opacity = 0.90;
       cursor_trail = 1;
+      adjust_line_height = "130%";
     };
     extraConfig = ''
       include dank-theme.conf
