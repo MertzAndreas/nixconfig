@@ -15,25 +15,42 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { self, nixpkgs, home-manager, niri, dms, ... }@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./nixos/configuration.nix
-        dms.nixosModules.greeter
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.mertz = import ./home;
-          home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.sharedModules = [
-            niri.homeModules.niri
-            dms.homeModules.dank-material-shell
-            dms.homeModules.niri
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      niri,
+      dms,
+      ...
+    }@inputs:
+    let
+      mkMachine =
+        machineModule:
+        nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            machineModule
+            dms.nixosModules.greeter
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.mertz = import ./home;
+              home-manager.extraSpecialArgs = { inherit inputs; };
+              home-manager.sharedModules = [
+                niri.homeModules.niri
+                dms.homeModules.dank-material-shell
+                dms.homeModules.niri
+              ];
+            }
           ];
-        }
-      ];
+        };
+    in
+    {
+      nixosConfigurations = {
+        desktop = mkMachine ./nixos/desktop.nix;
+        laptop = mkMachine ./nixos/laptop.nix;
+      };
     };
-  };
 }
