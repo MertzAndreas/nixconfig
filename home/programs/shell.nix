@@ -1,30 +1,4 @@
-{ pkgs, ... }: {
-  home.packages = [
-    pkgs.bat
-    pkgs.btop
-    pkgs.discord
-    pkgs.docker-client
-    pkgs.docker-compose
-    pkgs.dotnet-sdk
-    pkgs.fastfetch
-    pkgs.ffmpeg
-    pkgs.firefox
-    pkgs.jq
-    pkgs.kitty
-    pkgs.mpv
-    pkgs.nautilus
-    pkgs.obs-studio
-    pkgs.opencode
-    pkgs.pavucontrol
-    pkgs.sioyek
-    pkgs.spotify
-    pkgs.tealdeer
-    pkgs.unrar
-    pkgs.unzip
-    pkgs.wl-clipboard
-    pkgs.wl-mirror
-  ];
-
+{ ... }: {
   programs.bash.enable = false;
 
   programs.zsh = {
@@ -47,19 +21,8 @@
       export EDITOR="nvim"
       export VISUAL="nvim"
       export MANPAGER="nvim +Man!"
-      export WAYLAND_DISPLAY=wayland-1
-      export XDG_SESSION_TYPE=wayland
-      export XDG_CURRENT_DESKTOP=niri
-      export XDG_SESSION_DESKTOP=niri
-      export DESKTOP_SESSION=gnome
-       export GTK_USE_PORTAL=1
-       export MOZ_ENABLE_WAYLAND=1
+      export MOZ_ENABLE_WAYLAND=1
       export PATH="$HOME/.cargo/bin:$PATH"
-      export PATH="$HOME/.local/bin:$PATH"
-      export PATH="$HOME/.local/share/pnpm:$PATH"
-      export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
-      export PATH="$HOME/.cabal/bin:$PATH"
-      export PATH="$HOME/.ghcup/bin:$PATH"
       export PATH="$HOME/go/bin:$PATH"
       export PATH="$HOME/.dotnet/tools:$PATH"
       export DOCKER_BUILDKIT=1
