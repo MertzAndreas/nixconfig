@@ -1,6 +1,7 @@
 {
   pkgs,
   osConfig,
+  inputs,
   ...
 }:
 let
@@ -18,7 +19,6 @@ in
     pkgs.ffmpeg
     pkgs.firefox
     pkgs.jq
-    pkgs.kitty
     pkgs.mpv
     pkgs.nautilus
     pkgs.obs-studio
@@ -44,5 +44,6 @@ in
     pkgs.unzip
     pkgs.wl-clipboard
     pkgs.wl-mirror
+    inputs.herdr.packages.${pkgs.system}.default
   ];
 }
