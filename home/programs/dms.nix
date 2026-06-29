@@ -12,7 +12,7 @@
             enabled = true;
             visible = true;
             screenPreferences = [ "all" ];
-            leftWidgets = [ "clock" ];
+            leftWidgets = [ "clock" "music" ];
             centerWidgets = [ "workspaceSwitcher" ];
             rightWidgets = [ "systemTray" "clipboard" "notificationButton" "battery" "controlCenterButton" ];
             transparency = 5;
