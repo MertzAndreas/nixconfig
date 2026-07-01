@@ -33,7 +33,7 @@
     enableClipboardPaste = true;
 
     niri = {
-      enableKeybinds = true;
+      enableKeybinds = false;
       enableSpawn = true;
       includes.enable = false;
     };

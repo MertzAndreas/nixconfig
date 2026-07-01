@@ -158,6 +158,181 @@
           "spotlight"
           "toggle"
         ];
+        "Mod+N".action.spawn = [
+          "dms"
+          "ipc"
+          "call"
+          "notifications"
+          "toggle"
+        ];
+        "Mod+S".action.spawn = [
+          "dms"
+          "ipc"
+          "call"
+          "settings"
+          "toggle"
+        ];
+        "Super+Alt+L" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "lock"
+            "lock"
+          ];
+        };
+        "Mod+X".action.spawn = [
+          "dms"
+          "ipc"
+          "call"
+          "powermenu"
+          "toggle"
+        ];
+        "Mod+V".action.spawn = [
+          "dms"
+          "ipc"
+          "call"
+          "clipboard"
+          "toggle"
+        ];
+        "Mod+Alt+N" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "night"
+            "toggle"
+          ];
+        };
+        "XF86AudioRaiseVolume" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "audio"
+            "increment"
+            "3"
+          ];
+        };
+        "XF86AudioLowerVolume" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "audio"
+            "decrement"
+            "3"
+          ];
+        };
+        "XF86AudioMute" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "audio"
+            "mute"
+          ];
+        };
+        "XF86AudioMicMute" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "audio"
+            "micmute"
+          ];
+        };
+        "XF86MonBrightnessUp" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "brightness"
+            "increment"
+            "5"
+            ""
+          ];
+        };
+        "XF86MonBrightnessDown" = {
+          "allow-when-locked" = true;
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "brightness"
+            "decrement"
+            "5"
+            ""
+          ];
+        };
+
+        "XF86AudioPlay" = {
+          "allow-when-locked" = true;
+
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "mpris"
+            "playPause"
+          ];
+        };
+
+        "XF86AudioPause" = {
+          "allow-when-locked" = true;
+
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "mpris"
+            "pause"
+          ];
+        };
+
+        "XF86AudioStop" = {
+          "allow-when-locked" = true;
+
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "mpris"
+            "stop"
+          ];
+        };
+
+        "XF86AudioNext" = {
+          "allow-when-locked" = true;
+
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "mpris"
+            "next"
+          ];
+        };
+
+        "XF86AudioPrev" = {
+          "allow-when-locked" = true;
+
+          action.spawn = [
+            "dms"
+            "ipc"
+            "call"
+            "mpris"
+            "previous"
+          ];
+        };
+
         "Mod+B" = {
           action.spawn = [
             "sh"
