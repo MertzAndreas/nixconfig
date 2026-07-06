@@ -52,7 +52,7 @@
       animations = {
         window-open = {
           kind.easing = {
-            duration-ms = 200;
+            duration-ms = 250;
             curve = "linear";
           };
           custom-shader = ''
@@ -74,7 +74,7 @@
 
         window-close = {
           kind.easing = {
-            duration-ms = 175;
+            duration-ms = 200;
             curve = "linear";
           };
           custom-shader = ''
@@ -97,6 +97,7 @@
 
       layout = {
         gaps = 10;
+        "background-color" = "transparent";
         "focus-ring" = {
           enable = false;
         };
@@ -131,6 +132,15 @@
       "prefer-no-csd" = true;
       "screenshot-path" = "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png";
       "hotkey-overlay"."skip-at-startup" = true;
+
+      "layer-rules" = [
+        {
+          matches = [
+            { namespace = "quickshell"; }
+          ];
+          "place-within-backdrop" = true;
+        }
+      ];
 
       "window-rules" = [
         {
@@ -395,7 +405,7 @@
           action.spawn = [
             "sh"
             "-c"
-            "run-or-raise Spotify spotify"
+            "run-or-raise spotify"
           ];
           "hotkey-overlay".title = "Open Spotify";
         };
