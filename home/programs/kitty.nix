@@ -9,7 +9,7 @@
       background_blur = 1;
       background_opacity = 0.90;
       cursor_trail = 1;
-      adjust_line_height = "130%";
+      modify_font = "cell_height 150%";
     };
     extraConfig = ''
       include dank-theme.conf
