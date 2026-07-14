@@ -44,6 +44,6 @@ in
     pkgs.unzip
     pkgs.wl-clipboard
     pkgs.wl-mirror
-    inputs.herdr.packages.${pkgs.system}.default
+    inputs.herdr.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
