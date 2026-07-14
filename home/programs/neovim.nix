@@ -10,5 +10,10 @@
     tinymist
     basedpyright
     bash-language-server
+
+    delve 
+    (python3.withPackages (ps: [ ps.debugpy ])) 
+    lldb 
+    netcoredbg 
   ];
 }
