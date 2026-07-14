@@ -3,6 +3,7 @@
     rust-analyzer
     lua-language-server
     nixd
+    nixfmt
     roslyn-ls
     vtsls
     tailwindcss-language-server
@@ -11,9 +12,9 @@
     basedpyright
     bash-language-server
 
-    delve 
-    (python3.withPackages (ps: [ ps.debugpy ])) 
-    lldb 
-    netcoredbg 
+    delve
+    (python3.withPackages (ps: [ ps.debugpy ]))
+    lldb
+    netcoredbg
   ];
 }
