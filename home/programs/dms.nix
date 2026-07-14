@@ -7,6 +7,19 @@
         dynamicTheming = true;
         currentThemeName = "dynamic";
 
+        frameEnabled = true;
+        frameMode = "connected";
+        frameThickness = 16;
+        frameRounding = 23;
+        frameBlurEnabled = true;
+        frameCloseGaps = true;
+
+        animationVariant = 2;
+
+        spotlightBarShowModeChips = true;
+        rememberLastQuery = true;
+        rememberLastMode = true;
+
         barConfigs = [{
             id = "default";
             enabled = true;
@@ -17,6 +30,7 @@
             rightWidgets = [ "systemTray" "clipboard" "notificationButton" "battery" "controlCenterButton" ];
             transparency = 5;
             widgetTransparency = 50;
+            hoverPopouts = true;
         }];
     };
 

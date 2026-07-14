@@ -211,7 +211,7 @@
           "dms"
           "ipc"
           "call"
-          "spotlight"
+          "spotlight-bar"
           "toggle"
         ];
         "Mod+N".action.spawn = [
