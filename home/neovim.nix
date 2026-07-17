@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    rust-analyzer
     lua-language-server
     nixd
     nixfmt
@@ -13,7 +12,6 @@
     bash-language-server
 
     delve
-    (python3.withPackages (ps: [ ps.debugpy ]))
     lldb
     netcoredbg
   ];

@@ -1,13 +1,14 @@
 { pkgs, ... }: {
   imports = [
-    ./programs/niri.nix
-    ./programs/kitty.nix
-    ./programs/git.nix
-    ./programs/shell.nix
-    ./programs/packages.nix
-    ./programs/neovim.nix
-    ./programs/dms.nix
-    ./programs/matugen
+    ./niri.nix
+    ./kitty.nix
+    ./git.nix
+    ./shell.nix
+    ./packages.nix
+    ./languages.nix
+    ./neovim.nix
+    ./dms.nix
+    ./matugen
     ./scripts/default.nix
   ];
 

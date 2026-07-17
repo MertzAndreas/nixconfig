@@ -4,7 +4,7 @@
     ./modules/networking.nix
     ./modules/locale.nix
     ./modules/users.nix
-    ./modules/packages.nix
+    ./modules/system-packages.nix
     ./modules/nix.nix
     ./modules/bluetooth.nix
     ./modules/fonts.nix

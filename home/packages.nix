@@ -14,7 +14,6 @@ in
     pkgs.vesktop
     pkgs.docker-client
     pkgs.docker-compose
-    pkgs.dotnet-sdk
     pkgs.fastfetch
     pkgs.ffmpeg
     pkgs.firefox
