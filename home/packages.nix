@@ -44,5 +44,6 @@ in
     pkgs.wl-clipboard
     pkgs.wl-mirror
     inputs.herdr.packages.${pkgs.stdenv.hostPlatform.system}.default
+    pkgs.yazi
   ];
 }
