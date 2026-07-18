@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   programs.git = {
     enable = true;
     settings = {
@@ -30,6 +30,9 @@
         wip = "commit -am 'wip'";
         unstage = "restore --staged";
         ca = "commit --amend";
+      };
+      credential = {
+        "https://github.com".helper = "!${pkgs.gh}/bin/gh auth git-credential";
       };
     };
   };
