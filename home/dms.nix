@@ -47,7 +47,7 @@
 
     session = {
       isLightMode = false;
-      wallpaperPath = "/home/mertz/dotfiles/theme/backgrounds/wallhaven-je8p85.jpg";
+      wallpaperPath = "/home/mertz/nixconfig/home/backgrounds/wallhaven-je8p85.jpg";
     };
 
     enableSystemMonitoring = true; # System monitoring widgets (dgop)
