@@ -4,7 +4,7 @@
     nixd
     nixfmt
     roslyn-ls
-    vtsls
+    typescript-go
     tailwindcss-language-server
     clang-tools
     tinymist
