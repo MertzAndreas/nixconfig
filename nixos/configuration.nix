@@ -7,6 +7,7 @@
     ./modules/system-packages.nix
     ./modules/nix.nix
     ./modules/bluetooth.nix
+    ./modules/power.nix
     ./modules/fonts.nix
     ./modules/display-manager.nix
   ];
