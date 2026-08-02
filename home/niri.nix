@@ -393,9 +393,9 @@
           action.spawn = [
             "sh"
             "-c"
-            "firefox"
+            "run-or-raise zen"
           ];
-          "hotkey-overlay".title = "Open Browser: Firefox";
+          "hotkey-overlay".title = "Open Browser: Zen";
         };
         "Mod+D" = {
           action.spawn = [ "vesktop" ];

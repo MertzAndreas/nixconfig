@@ -8,6 +8,7 @@
     ./languages.nix
     ./neovim.nix
     ./dms.nix
+    ./zen.nix
     ./matugen
     ./scripts/default.nix
   ];
