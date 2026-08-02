@@ -41,6 +41,7 @@ in
     pkgs.tealdeer
     pkgs.unrar
     pkgs.unzip
+    pkgs.xxd
     pkgs.wl-clipboard
     pkgs.wl-mirror
     inputs.herdr.packages.${pkgs.stdenv.hostPlatform.system}.default
