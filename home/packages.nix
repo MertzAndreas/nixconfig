@@ -47,5 +47,9 @@ in
     inputs.herdr.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.tuicr.packages.${pkgs.stdenv.hostPlatform.system}.default
     pkgs.yazi
+    pkgs.git-filter-repo
+    pkgs.duckdb
+    pkgs.lazydocker
+    pkgs.stremio-linux-shell
   ];
 }

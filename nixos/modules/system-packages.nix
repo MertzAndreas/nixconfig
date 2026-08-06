@@ -8,9 +8,7 @@
     tree-sitter
     neovim
     tmux
-    duckdb
     gh
-    git-filter-repo
   ];
 
   environment.pathsToLink = [

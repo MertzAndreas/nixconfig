@@ -34,8 +34,6 @@
       la = "eza -lAh";
       l = "eza -lah";
       lt = "eza --tree --level=2 --long --icons --git";
-      ltt = "eza --tree --level=3 --long --icons --git";
-      lttt = "eza --tree --level=4 --long --icons --git";
       tree = "eza --oneline --tree";
       n = "nvim";
       g = "git";
