@@ -6,10 +6,6 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     dms = {
       url = "github:AvengeMedia/DankMaterialShell/stable";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +28,6 @@
     {
       nixpkgs,
       home-manager,
-      niri,
       dms,
       ...
     }@inputs:
@@ -51,9 +46,7 @@
               home-manager.users.mertz = import ./home;
               home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.sharedModules = [
-                niri.homeModules.niri
                 dms.homeModules.dank-material-shell
-                dms.homeModules.niri
               ];
             }
           ];

@@ -11,6 +11,5 @@
     ./modules/fonts.nix
     ./modules/display-manager.nix
   ];
-
   system.stateVersion = "26.05";
 }

@@ -55,11 +55,5 @@
     enableAudioWavelength = true; # Audio visualizer (cava)
     enableCalendarEvents = true; # Calendar integration (khal)
     enableClipboardPaste = true;
-
-    niri = {
-      enableKeybinds = false;
-      enableSpawn = true;
-      includes.enable = false;
-    };
   };
 }

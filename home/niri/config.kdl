@@ -1,0 +1,247 @@
+input {
+    keyboard {
+        xkb {
+            layout "dk"
+            variant "nodeadkeys"
+        }
+        repeat-delay 600
+        repeat-rate 25
+        track-layout "global"
+        numlock
+    }
+    touchpad {
+        tap
+        dwt
+        drag true
+        drag-lock
+        natural-scroll
+        scroll-factor 1.500000
+    }
+    mouse { accel-speed -0.750000; }
+    warp-mouse-to-focus
+}
+
+output "eDP-1" {
+    scale 1.5
+    transform "normal"
+    position x=0 y=0
+    mode "2560x1600@120.006"
+}
+output "HDMI-A-1" {
+    scale 1.200000
+    transform "normal"
+    position x=0 y=0
+    mode "2560x1600@120.000000"
+}
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+prefer-no-csd
+layout {
+    gaps 10
+    struts {
+        left 0
+        right 0
+        top 0
+        bottom 0
+    }
+    focus-ring { off; }
+    border { off; }
+    background-color "transparent"
+    shadow {
+        on
+        offset x=0 y=5
+        softness 20
+        spread 5
+        draw-behind-window true
+        color "#0007"
+    }
+    default-column-width { proportion 0.500000; }
+    preset-column-widths {
+        proportion 0.333330
+        proportion 0.500000
+        proportion 0.666670
+    }
+    center-focused-column "never"
+}
+cursor {
+    xcursor-theme "default"
+    xcursor-size 28
+}
+hotkey-overlay { skip-at-startup; }
+clipboard { disable-primary; }
+binds {
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+    Mod+Alt+Down { focus-monitor-down; }
+    Mod+Alt+K { show-hotkey-overlay; }
+    Mod+Alt+N allow-when-locked=true { spawn "dms" "ipc" "call" "night" "toggle"; }
+    Mod+Alt+P { screenshot-window; }
+    Mod+Alt+Up { focus-monitor-up; }
+    Mod+B hotkey-overlay-title="Open Browser: Zen" { spawn "sh" "-c" "run-or-raise zen"; }
+    Mod+Comma { consume-window-into-column; }
+    Mod+Ctrl+End { move-column-to-last; }
+    Mod+Ctrl+Home { move-column-to-first; }
+    Mod+Ctrl+I { move-column-to-workspace-up; }
+    "Mod+Ctrl+Page_Down" { move-column-to-workspace-down; }
+    "Mod+Ctrl+Page_Up" { move-column-to-workspace-up; }
+    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp { move-column-left; }
+    Mod+Ctrl+U { move-column-to-workspace-down; }
+    Mod+Ctrl+V { switch-focus-between-floating-and-tiling; }
+    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Ctrl+WheelScrollLeft { move-column-left; }
+    Mod+Ctrl+WheelScrollRight { move-column-right; }
+    Mod+Ctrl+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+D hotkey-overlay-title="Open Vesktop" { spawn "vesktop"; }
+    Mod+Down { focus-window-down; }
+    Mod+E hotkey-overlay-title="File manager: Nautilus" { spawn "nautilus" "--new-window"; }
+    Mod+End { focus-column-last; }
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Mod+F { maximize-column; }
+    Mod+H { focus-column-left; }
+    Mod+Home { focus-column-first; }
+    Mod+I { focus-workspace-up; }
+    Mod+J { focus-window-down; }
+    Mod+K { focus-window-up; }
+    Mod+L { focus-column-right; }
+    Mod+Left { focus-column-left; }
+    Mod+M hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "run-or-raise spotify"; }
+    Mod+Minus { set-column-width "-10%"; }
+    Mod+N { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Mod+O { toggle-overview; }
+    Mod+P { screenshot; }
+    "Mod+Page_Down" { focus-workspace-down; }
+    "Mod+Page_Up" { focus-workspace-up; }
+    Mod+Period { expel-window-from-column; }
+    Mod+Plus { set-column-width "+10%"; }
+    Mod+Q { close-window; }
+    Mod+R { switch-preset-column-width; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "sh" "-c" "kitty-cwd"; }
+    Mod+Right { focus-column-right; }
+    Mod+S { spawn "dms" "ipc" "call" "settings" "toggle"; }
+    Mod+Shift+1 { move-column-to-workspace 1; }
+    Mod+Shift+2 { move-column-to-workspace 2; }
+    Mod+Shift+3 { move-column-to-workspace 3; }
+    Mod+Shift+4 { move-column-to-workspace 4; }
+    Mod+Shift+5 { move-column-to-workspace 5; }
+    Mod+Shift+6 { move-column-to-workspace 6; }
+    Mod+Shift+7 { move-column-to-workspace 7; }
+    Mod+Shift+8 { move-column-to-workspace 8; }
+    Mod+Shift+9 { move-column-to-workspace 9; }
+    Mod+Shift+Comma { consume-or-expel-window-left; }
+    Mod+Shift+Down { move-window-down; }
+    Mod+Shift+E { quit; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+I { move-workspace-up; }
+    Mod+Shift+J { move-window-down; }
+    Mod+Shift+K { move-window-up; }
+    Mod+Shift+L { move-column-right; }
+    Mod+Shift+Left { move-column-left; }
+    Mod+Shift+M repeat=false { spawn "wl-mirror" "eDP-1"; }
+    Mod+Shift+P { screenshot-screen; }
+    "Mod+Shift+Page_Down" { move-workspace-down; }
+    "Mod+Shift+Page_Up" { move-workspace-up; }
+    Mod+Shift+Period { consume-or-expel-window-right; }
+    Mod+Shift+R { switch-preset-column-width-back; }
+    Mod+Shift+Right { move-column-right; }
+    Mod+Shift+U { move-workspace-down; }
+    Mod+Shift+Up { move-window-up; }
+    Mod+Shift+V { toggle-window-floating; }
+    Mod+Shift+WheelScrollDown { focus-column-right; }
+    Mod+Shift+WheelScrollUp { focus-column-left; }
+    Mod+Space { spawn "dms" "ipc" "call" "spotlight-bar" "toggle"; }
+    Mod+Tab { focus-workspace-previous; }
+    Mod+U { focus-workspace-down; }
+    Mod+Up { focus-window-up; }
+    Mod+V { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollLeft { focus-column-left; }
+    Mod+WheelScrollRight { focus-column-right; }
+    Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+    Mod+X { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+    Shift+Super+F23 { spawn "true"; }
+    Super+Alt+L allow-when-locked=true { spawn "dms" "ipc" "call" "lock" "lock"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "3"; }
+    XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
+    XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
+    XF86AudioNext allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "next"; }
+    XF86AudioPause allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "pause"; }
+    XF86AudioPlay allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "playPause"; }
+    XF86AudioPrev allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "previous"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "3"; }
+    XF86AudioStop allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "stop"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
+}
+spawn-at-startup "dms" "run"
+spawn-at-startup "spotify"
+spawn-at-startup "vesktop"
+spawn-at-startup "nm-applet"
+window-rule {
+    geometry-corner-radius 20.000000 20.000000 20.000000 20.000000
+    clip-to-geometry true
+}
+window-rule {
+    match is-active=false
+    opacity 0.850000
+}
+window-rule {
+    match is-active=true
+    opacity 0.900000
+}
+window-rule {
+    match app-id="^org\\.keepassxc\\.KeePassXC$"
+    match app-id="^org\\.gnome\\.World\\.Secrets$"
+    block-out-from "screen-capture"
+}
+window-rule {
+    match app-id="pavucontrol$"
+    open-floating true
+    default-floating-position relative-to="bottom-right" x=4 y=4
+}
+
+window-rule {
+    match app-id="^zen$"
+    background-effect {
+        blur true
+    }
+}
+
+
+window-rule {
+    match app-id="^Spotify$"
+    background-effect {
+        blur true
+    }
+}
+window-rule {
+    match app-id="^vesktop$"
+    background-effect {
+        blur true
+    }
+}
+layer-rule {
+    match namespace="quickshell"
+    place-within-backdrop true
+}
+gestures { hot-corners { off; }; }
+animations {
+    window-close {
+        duration-ms 200
+        curve "linear"
+        custom-shader "vec4 shrinking_circle(vec3 coords_geo, vec3 size_geo) {\n  vec3 coords_tex = niri_geo_to_tex * coords_geo;\n  vec4 color = texture2D(niri_tex, coords_tex.st);\n  vec2 coords = (coords_geo.xy - vec2(0.5, 0.5)) * size_geo.xy * 2.0;\n  coords = coords / length(size_geo.xy);\n  float p_close = 1.0 - niri_clamped_progress;\n  if (p_close * p_close <= dot(coords, coords))\n    color = vec4(0.0);\n  return color;\n}\nvec4 close_color(vec3 coords_geo, vec3 size_geo) {\n  return shrinking_circle(coords_geo, size_geo);\n}\n"
+    }
+    window-open {
+        duration-ms 250
+        curve "linear"
+        custom-shader "vec4 expanding_circle(vec3 coords_geo, vec3 size_geo) {\n  vec3 coords_tex = niri_geo_to_tex * coords_geo;\n  vec4 color = texture2D(niri_tex, coords_tex.st);\n  vec2 coords = (coords_geo.xy - vec2(0.5, 0.5)) * size_geo.xy * 2.0;\n  coords = coords / length(size_geo.xy);\n  float p = niri_clamped_progress;\n  if (p * p <= dot(coords, coords))\n    color = vec4(0.0);\n  return color;\n}\nvec4 open_color(vec3 coords_geo, vec3 size_geo) {\n  return expanding_circle(coords_geo, size_geo);\n}\n"
+    }
+}
+debug { honor-xdg-activation-with-invalid-serial true; }

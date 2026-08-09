@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./niri.nix
+    ./niri
     ./kitty.nix
     ./git.nix
     ./shell.nix
