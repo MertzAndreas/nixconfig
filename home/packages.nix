@@ -25,6 +25,7 @@
     pkgs.unrar
     pkgs.unzip
     pkgs.xxd
+    pkgs.imv
     pkgs.wl-clipboard
     pkgs.wl-mirror
     inputs.herdr.packages.${pkgs.stdenv.hostPlatform.system}.default
