@@ -1,6 +1,7 @@
 { ... }: {
   imports = [
     ./modules/boot.nix
+    ./modules/steam.nix
     ./modules/networking.nix
     ./modules/locale.nix
     ./modules/users.nix
