@@ -35,5 +35,7 @@
     pkgs.duckdb
     pkgs.lazydocker
     pkgs.stremio-linux-shell
+    pkgs.dua
+    pkgs.pinta
   ];
 }

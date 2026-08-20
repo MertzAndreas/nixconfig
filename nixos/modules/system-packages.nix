@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    networkmanagerapplet
     xwayland-satellite
     git
     ripgrep

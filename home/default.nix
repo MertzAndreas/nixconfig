@@ -18,7 +18,7 @@
     gtk.enable = true;
     name = "Adwaita";
     package = pkgs.adwaita-icon-theme;
-    size = 20;
+    size = 28;
   };
 
   home.stateVersion = "26.05";
