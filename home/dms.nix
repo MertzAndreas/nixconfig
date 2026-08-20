@@ -50,7 +50,7 @@
       wallpaperPath = "/home/mertz/nixconfig/home/backgrounds/wallhaven-je8p85.jpg";
     };
 
-    enableSystemMonitoring = true; # System monitoring widgets (dgop)
+    enableSystemMonitoring = false; # System monitoring widgets (dgop)
     enableDynamicTheming = true; # Wallpaper-based theming (matugen)
     enableAudioWavelength = true; # Audio visualizer (cava)
     enableCalendarEvents = true; # Calendar integration (khal)

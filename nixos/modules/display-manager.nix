@@ -3,10 +3,6 @@
 
   programs.niri.enable = true;
 
-  # Disabled in favor of DankMaterialShell's built-in polkit agent
-  # See: https://danklinux.com/docs/dankmaterialshell/nixos-flake#polkit-agent
-  systemd.user.services.niri-flake-polkit.enable = false;
-
   users.users.greeter.extraGroups = [
     "video"
     "render"
@@ -16,5 +12,10 @@
     enable = true;
     compositor.name = "niri";
     configHome = "/home/mertz";
+  };
+
+  programs.dank-calendar = {
+    enable = true;
+    systemd.enable = true;
   };
 }

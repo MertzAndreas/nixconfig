@@ -10,6 +10,10 @@
       url = "github:AvengeMedia/DankMaterialShell/stable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dankcalendar = {
+      url = "github:AvengeMedia/dankcalendar";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     herdr = {
       url = "github:ogulcancelik/herdr/v0.7.1";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -29,6 +33,7 @@
       nixpkgs,
       home-manager,
       dms,
+      dankcalendar,
       ...
     }@inputs:
     let
@@ -39,6 +44,7 @@
           modules = [
             machineModule
             dms.nixosModules.greeter
+            dankcalendar.nixosModules.dank-calendar
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
