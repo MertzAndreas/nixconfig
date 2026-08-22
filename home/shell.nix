@@ -46,6 +46,15 @@
       venv = "source .venv/bin/activate";
       "edit-in-kitty" = "kitten edit-in-kitty";
     };
+
+    initContent = ''
+      bindkey '^n' 'run-nvim'
+      run-nvim() {
+        BUFFER="nvim"
+        zle accept-line
+      }
+      zle -N run-nvim
+    '';
   };
 
   programs.fzf = {
