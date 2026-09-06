@@ -114,6 +114,7 @@ binds {
     Mod+M hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "run-or-raise spotify"; }
     Mod+Minus { set-column-width "-10%"; }
     Mod+N { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+    Mod+W { spawn "dms" "ipc" "call" "dankdash" "wallpaper"; }
     Mod+O { toggle-overview; }
     Mod+P { screenshot; }
     "Mod+Page_Down" { focus-workspace-down; }

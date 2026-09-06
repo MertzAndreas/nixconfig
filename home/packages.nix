@@ -37,5 +37,6 @@
     pkgs.stremio-linux-shell
     pkgs.dua
     pkgs.pinta
+    pkgs.localsend
   ];
 }
