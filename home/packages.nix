@@ -38,5 +38,6 @@
     pkgs.dua
     pkgs.pinta
     pkgs.localsend
+    pkgs.gnome-clocks
   ];
 }
