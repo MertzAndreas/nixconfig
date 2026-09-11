@@ -14,6 +14,12 @@
       url = "github:AvengeMedia/dankcalendar";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    dms-greeter = {
+      url = "github:AvengeMedia/dank-greeter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     herdr = {
       url = "github:ogulcancelik/herdr/v0.7.1";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -34,6 +40,7 @@
       home-manager,
       dms,
       dankcalendar,
+      dms-greeter,
       ...
     }@inputs:
     let
@@ -43,7 +50,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             machineModule
-            dms.nixosModules.greeter
+            dms-greeter.nixosModules.default
             dankcalendar.nixosModules.dank-calendar
             home-manager.nixosModules.home-manager
             {
